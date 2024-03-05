@@ -3,31 +3,45 @@
 <html lang="ko">
 <head>
     <meta charset="utf-8">
-    <title>웹 폰트(구글 폰트) 사용하기</title>
+    <!-- 한글 사용을 위한 utf-8 설정 -->
+    <title>웹 폰트(구글*눈누 폰트) 사용하기</title>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
     <!-- 구글 폰트에서 링크하기 -->
 
     <style>
+    /* 폰트는 CSS 제일 상단에 입력하기 */
     .webfont{
         font-family: "Bebas Neue", sans-serif;
         font-weight: 400;
         font-style: normal;
-      }
+    }
     .webfontSecond{
         font-family: "Madimi One", sans-serif;
         font-weight: 400;
         font-style: normal;
       }
+      /* 구글 폰트 사용 */
+    @font-face {
+      font-family: 'YEONGJUSeonbiTTF';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2403@1.0/YEONGJUSeonbiTTF.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+    }
+    .webfontThird{
+      font-family: 'YEONGJUSeonbiTTF';
+    }
+    /* 눈누 폰트 사용 */
     p{
-      font-size: 3.5em;
+      font-size: 2.5em;
     }
     </style>
-    
 </head>
+
 <body>
   <p>1. Using Defalut Font</p>
   <p class="webfont">2. Using Benas Neue(Google-Fonts) Font</p>
   <p class="webfontSecond">3. Using Madimi One(Google-Fonts) Font</p>
+  <p class="webfontThird">4. 영주선비(눈누 폰트) 폰트 씀</p>
 </body>
 </html>
