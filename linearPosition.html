@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<title>선형 그러데이션</title>
+	<style>
+		div {
+			width: 500px;
+			/* 가로 길이 500 */
+			height: 300px;
+			/* 세로 길이 300 */
+			border-radius: 10px;
+			/* 모서리가 둥근 정도 */
+		}
+		/* div: 분할하다는 뜻의 Division의 준말로, HTML문서 내에서 한 개의 가로 공간을 만드는 태그이다. */
+		
+		.grad {
+			background: blue;
+			/* css3 미지원 브라우저 */
+			background: -webkit-linear-gradient(left top, blue, white);
+			/* 초기 모던 브라우저 */
+			/* linear-gradient 앞에 접두사를 붙이는 이유는 구형 컴퓨터에서 구현이 안될 것을 대비하여 표기하는 것. */
+			background: -moz-linear-gradient(right bottom, blue, white);
+			/* 초기 모던 브라우저 */
+			background: -o-linear-gradient(right bottom, blue, white);
+			/* 초기 모던 브라우저 */
+			background: linear-gradient(to right bottom, blue,orange, white);
+			/* --- 바로 윗줄만(아무 접두사가 없는 줄) 신경쓰면 됨!! --- */
+			/* 최신 모던 브라우저 */
+		}
+	</style>
+</head>
+
+<body>
+	<div class="grad"></div>
+</body>
+
+</html>
