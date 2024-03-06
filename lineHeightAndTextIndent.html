@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>줄 간격과 들여쓰기</title>
+  <style>
+    p {
+      font-size: 15px;
+      border: 1px solid gray;
+      padding: 10px;
+    }
+
+    .big-line {
+      line-height: 2;
+      /* 글자 크기 2배만큼의 줄간격 */
+    }
+
+    .small-line {
+      line-height: 0.7;
+      /* 글자 크기 0.7배만큼의 줄간격 */
+    }
+
+    .indent1 {
+      text-indent: 15px;
+      /* 15px만큼 들여쓰기 */
+    }
+
+    .indent2 {
+      text-indent: 5%;
+      /* 5%만큼 들여쓰기 */
+    }
+  </style>
+</head>
+
+<body>
+  <h2>블루베리(Blueberry)의 기능</h2>
+  <p>블루베리의 대표적인 기능은 항산화로 비타민A, C, E가 풍부하고 안토니시아민, 페놀 등이 활성 산소를 없애 노화를 억제한다.
+    이밖에 블루베리의 안토니시아민은 눈의 피로와 시력 저하를 회복시키는 효능을 가지고 있다.</p>
+  <p class="small-line indent1">블루베리의 대표적인 기능은 항산화로 비타민A, C, E가 풍부하고 안토니시아민, 페놀 등이 활성 산소를 없애 노화를 억제한다.
+    이밖에 블루베리의 안토니시아민은 눈의 피로와 시력 저하를 회복시키는 효능을 가지고 있다.</p>
+  <!-- 클래스 2개를 적용시키고 싶다면 ""안에 띄어쓰기로 2개 쓰기 -->
+  <p class="big-line indent2">블루베리의 대표적인 기능은 항산화로 비타민A, C, E가 풍부하고 안토니시아민, 페놀 등이 활성 산소를 없애 노화를 억제한다.
+    이밖에 블루베리의 안토니시아민은 눈의 피로와 시력 저하를 회복시키는 효능을 가지고 있다.</p>
+</body>
+
+</html>
