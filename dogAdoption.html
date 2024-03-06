@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<title>display 속성</title>
+	<style>
+		nav {
+			width: 100%;
+			height: 60px;
+			background-color: #069;
+		}
+
+		nav ul li {
+			display: inline-block;
+			/* 리스트를 인라인으로 변경 - 메뉴 모양을 표현하기 위해. */
+			padding: 10px 15px;
+			margin-right: 20px;
+			/* border에서 다른 border까지의 거리 */
+			/* 쉽게 말해 margin은 border로부터 외부적 거리, padding은 border로부터 내부적 거리를 의미함 */
+			border-top: 3px solid rgb(64, 64, 187);
+		}
+
+		nav ul li:hover {
+			background-color: rgb(33, 131, 229);
+		}
+
+		nav ul li a {
+			color: white;
+			text-decoration: none;
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="#">임보 사진</a></li>
+			<li><a href="#">입양하기</a></li>
+			<li><a href="#">건강돌보기</a></li>
+			<li><a href="#">더불어살기</a></li>
+		</ul>
+		<h4>유기견 입양 홈페이지를 만드는 중입니다... </h4>
+	</nav>
+</body>
+
+</html>
