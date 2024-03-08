@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>Transform</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        animation-name: change-bg;
+        animation-duration: 3s;
+        /* 애니매이션 실행 시간 */
+        animation-iteration-count: infinite;
+        /* 애니매이션 실행 횟수 */
+      }
+
+      @keyframes change-bg {
+        /* @keyframes 애니매이션 이름{} */
+        from {
+          background-color: blue;
+          border: 1px solid black;
+        }
+        to {
+          background-color: #a5d6ff;
+          border: 1px solid blue;
+          border-radius: 50%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div></div>
+  </body>
+</html>
